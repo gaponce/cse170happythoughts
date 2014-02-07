@@ -13,7 +13,11 @@ var handlebars = require('express3-handlebars')
  ***********************************************************************************************/
 var index = require('./routes/index');
 var project = require('./routes/project');
-
+var profile = require('./routes/profile');
+var create = require('./routes/create');
+var login = require('./routes/login');
+var logout = require('./routes/logout');
+var friends = require('./routes/friends');
 
 /************************************************************************************************
  * Environments
@@ -45,10 +49,13 @@ if ('development' == app.get('env')) {
  * ADD ROUTES HERE
  ***********************************************************************************************/
 app.get('/', index.view);
-app.get('/create_content', project.viewProject);
-app.get('/login', project.viewProject);
-app.get('/project', project.viewProject);
-app.get('/project', project.viewProject);
+app.get('/user_content/create_content', create.view);
+app.get('/profile', profile.view);
+app.get('/social/friends', friends.view);
+app.get('/auth/logout', logout.view);
+app.get('/auth/login', login.view);
+// app.get('/project', project.viewProject);
+// app.get('/project', project.viewProject);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

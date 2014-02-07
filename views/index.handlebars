@@ -2,24 +2,18 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>{{title}}</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+      
 </head>
 
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		
 	    <div class="navbar navbar-default" role="navigation">
 	        <div class="navbar-header">
@@ -34,33 +28,37 @@
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	          	{{#each navbar}}
-	            	<li><a href="/{{ navbar-item }}">{{ navbar-item }}</a></li>
+	            	<li><a href="/{{ navbar-item }}.html">{{ navbar-item }}</a></li>
 	            {{/each}}
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	     </div>
 
-<!-- 	     <div class="jumbotron">
-			<h1>Happy Thoughts</h1>
-			<p>Stress Relief Application</p>
-		</div> -->
+	     <div class="container-fluid">
+	     	<div class="row">
+	     		<h1 class="well"> Home </h1>
+	     	</div>
+	     	<div class="row">
+	     		<div class="videowrapper column-xs-6">
+			    	<iframe class="column-xs-6" height="auto" class="img-responsive" src="//www.youtube.com/embed/zaGUr6wzyT8" frameborder="0" allowfullscreen></iframe>
+	            	
+<!-- 	            	<ul style="list-style-type: none">
+	            		{{#each images}}
+	            			<li><img src="{{ imageURL }}"></li>
+	            		{{/each}}
+	            	</ul> -->
+			    </div>
+	     	</div>
 
-	    <button type="button" class="btn btn-primary" style="width: 100%; margin-bottom: 30px;"> Button Filler for Javascript Slider </button>
+	     	<div class"row" style="margin-top: 50px;">
+	     		<div class="col-xs-2"></div>
+	     		<button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Previous </button>
+			    <div class="col-xs-2"></div>
+			    <button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Next </button>
+			    <div class="col-xs-2"></div>
+		    </div>
+	     </div>
 
-	    <div class="videowrapper">
-	    	<iframe width="100%" height="auto" class="img-responsive" src="//www.youtube.com/embed/zaGUr6wzyT8" frameborder="0" allowfullscreen></iframe>
-	    </div>
-
-
-<!-- 		{{#each projects}}
-			<div class="project" id="{{id}}">
-				<a href="project/{{name}}" class="thumbnail">
-					<img src="images/{{image}}" class="img">
-					<p>{{name}}</p>
-				</a>
-			</div>
-		{{/each}} -->
-		
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>

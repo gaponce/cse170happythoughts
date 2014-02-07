@@ -1,5 +1,5 @@
 {
-	"friends": [
+	"images": [
 		{
 			"name": "Doug Engelbart",
 			"description": "Has awesome pet mice",
@@ -33,11 +33,11 @@
 	],
 
 	"navbar": [
-      {"navbar-item": "Home"},
-      {"navbar-item": "Create"},
-      {"navbar-item": "Profile"},
-      {"navbar-item": "Friends"},
-      {"navbar-item": "Logout"}
+      {"navbar-item": "home"},
+      {"navbar-item": "create"},
+      {"navbar-item": "profile"},
+      {"navbar-item": "friends"},
+      {"navbar-item": "logout"}
     ],
 
 

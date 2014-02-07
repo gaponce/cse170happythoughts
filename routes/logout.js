@@ -1,6 +1,6 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-   res.render('auth/login', data);
+   res.render('auth/logout', data);
 }
 
