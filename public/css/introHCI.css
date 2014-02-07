@@ -33,3 +33,7 @@
 .project a {
      text-align: center;
 }
+
+.navbar-default .navbar-nav>li>a.active {
+     color: red;
+}

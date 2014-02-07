@@ -33,11 +33,9 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="#">Home</a></li>
-	            <li><a href="">Settings</a></li>
-	            <li><a href="">Profile</a></li>
-	            <li><a href="">Share</a></li>
-	            <li><a href="">Log Out</a></li>
+	          	{{#each navbar}}
+	            	<li><a href="#">{{ navbar-item }}</a></li>
+	            {{/each}}
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	     </div>
@@ -46,8 +44,6 @@
 			<h1>Happy Thoughts</h1>
 			<p>Stress Relieving Application</p>
 		</div>
-
-
 
 		{{#each projects}}
 			<div class="project" id="{{id}}">
@@ -61,6 +57,7 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/base.js"></script>
 </body>
 </html>
