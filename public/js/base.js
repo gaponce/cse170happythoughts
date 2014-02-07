@@ -5,7 +5,7 @@ $(document).ready(function() {
 	initializePage();
 
 	$('.navbar-default .navbar-nav>li>a').click(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         $('a').removeClass('active');
         $(this).addClass('active');
     });

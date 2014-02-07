@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		
 	    <div class="navbar navbar-default" role="navigation">
 	        <div class="navbar-header">
@@ -28,7 +28,7 @@
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	          	{{#each navbar}}
-	            	<li><a href="/{{ navbar-item }}">{{ navbar-item }}</a></li>
+	            	<li><a href="{{ navbar-item }}">{{ navbar-item }}</a></li>
 	            {{/each}}
 	          </ul>
 	        </div><!--/.nav-collapse -->
@@ -36,26 +36,24 @@
 
 	     <div class="container-fluid">
 	     	<div class="row">
-	     		<h1> Create Content </h1>
+	     		<h1 class="well"> Create Content </h1>
 	     	</div>
 	     	<div class="row">
 	     		<div class="videowrapper column-xs-6">
 			    	<iframe class="column-xs-6" height="auto" class="img-responsive" src="//www.youtube.com/embed/zaGUr6wzyT8" frameborder="0" allowfullscreen></iframe>
 	            	
-	            	<ul style="list-style-type: none">
+<!-- 	            	<ul style="list-style-type: none">
 	            		{{#each images}}
 	            			<li><img src="{{ imageURL }}"></li>
 	            		{{/each}}
-	            	</ul>
+	            	</ul> -->
 			    </div>
 	     	</div>
 
 	     	<div class"row" style="margin-top: 50px;">
-	     		<div class="col-xs-2"></div>
-			    <button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Next </button>
-			    <div class="col-xs-2"></div>
-			    <button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Previous </button>
-			    <div class="col-xs-2"></div>
+	     		<div class="col-xs-4"></div>
+			    <button type="button" class="btn-lg btn-primary col-xs-4" style="margin-bottom: 30px;"> Create </button>
+
 		    </div>
 	     </div>
 

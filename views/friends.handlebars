@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		
 	    <div class="navbar navbar-default" role="navigation">
 	        <div class="navbar-header">
@@ -36,26 +36,33 @@
 
 	     <div class="container-fluid">
 	     	<div class="row">
-	     		<h1> Friends Page </h1>
+	     		<h1 class="well"> Friends Page </h1>
 	     	</div>
+
+	     	{{#each images}}
 	     	<div class="row">
-	     		<div class="videowrapper column-xs-6">
-			    	<iframe class="column-xs-6" height="auto" class="img-responsive" src="//www.youtube.com/embed/zaGUr6wzyT8" frameborder="0" allowfullscreen></iframe>
-	            	
-	            	<ul style="list-style-type: none">
-	            		{{#each images}}
-	            			<li><img src="{{ imageURL }}"></li>
-	            		{{/each}}
-	            	</ul>
-			    </div>
+    	    	
+	    		<div class="col-xs-4">
+	    			<img src="{{ imageURL }}" class="img-responsive">
+	    		</div>
+            	
+            	<div class="col-xs-offset-1 col-xs-4">
+            		<h2> {{name}}</h2>
+            		<p> {{description}}
+
+Assueverit reprehendunt has cu, ex melius indoctum praesent mea. His an utinam veritus neglegentur, alienum scaevola eu eum. Est cu dolore democritum. Zril suavitate ius eu, duo ne hinc exerci, odio novum scaevola eam cu. Ea labores inermis vocibus sit, ad pri tacimates quaestio disputando.</p>
+
+					<button type="button" style="margin-top: 30px;" class="btn-lg btn-primary col-xs-12 pull-right" style="margin-bottom: 30px;"> Add Friend </button>
+
+            	</div>
+	      
 	     	</div>
+	     	<hr />
+	     	{{/each}}
 
 	     	<div class"row" style="margin-top: 50px;">
 	     		<div class="col-xs-2"></div>
-			    <button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Next </button>
-			    <div class="col-xs-2"></div>
-			    <button type="button" class="btn-lg btn-primary col-xs-3" style="margin-bottom: 30px;"> Previous </button>
-			    <div class="col-xs-2"></div>
+			    
 		    </div>
 	     </div>
 
