@@ -49,11 +49,11 @@ if ('development' == app.get('env')) {
  * ADD ROUTES HERE
  ***********************************************************************************************/
 app.get('/', index.view);
-app.get('/user_content/create_content', create.view);
+app.get('/create', create.view);
 app.get('/profile', profile.view);
-app.get('/social/friends', friends.view);
-app.get('/auth/logout', logout.view);
-app.get('/auth/login', login.view);
+app.get('/friends', friends.view);
+app.get('/logout', logout.view);
+app.get('/login', login.view);
 // app.get('/project', project.viewProject);
 // app.get('/project', project.viewProject);
 
