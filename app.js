@@ -18,6 +18,7 @@ var create = require('./routes/create');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
 var friends = require('./routes/friends');
+var add_friend = require('./routes/add_friend');
 
 /************************************************************************************************
  * Environments
@@ -49,13 +50,13 @@ if ('development' == app.get('env')) {
  * ADD ROUTES HERE
  ***********************************************************************************************/
 app.get('/', index.view);
-app.get('/:id', index.view);
 app.get('/home', index.view);
 app.get('/create', create.view);
 app.get('/profile', profile.view);
 app.get('/friends', friends.view);
 app.get('/logout', logout.view);
 app.get('/login', login.view);
+app.get('/add_friend', add_friend.view);
 // app.get('/project', project.viewProject);
 // app.get('/project', project.viewProject);
 
