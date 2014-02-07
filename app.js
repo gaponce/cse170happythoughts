@@ -45,8 +45,10 @@ if ('development' == app.get('env')) {
  * ADD ROUTES HERE
  ***********************************************************************************************/
 app.get('/', index.view);
+app.get('/create_content', project.viewProject);
+app.get('/login', project.viewProject);
 app.get('/project', project.viewProject);
-app.get('/project/:name', project.viewProject);
+app.get('/project', project.viewProject);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
