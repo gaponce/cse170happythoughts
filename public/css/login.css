@@ -31,7 +31,7 @@
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
-  h3 {
-    text-align: center;
+  .greeting {
+    text-align: right;
     line-height: 300%;
   }
